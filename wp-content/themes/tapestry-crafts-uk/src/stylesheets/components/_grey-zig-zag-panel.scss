@@ -1,0 +1,35 @@
+.grey-zig-zag-panel {
+    background: #e9e7e7;
+    text-align: center;
+    &__border-top {
+        background-image:url('/wp-content/uploads/2024/10/border.png');
+        background-repeat: repeat-x;
+        height: 22px;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    &__border-bottom {
+        background-image:url('/wp-content/uploads/2024/10/border-2.png');
+        background-repeat: repeat-x;
+        height: 22px;
+        width: 100%;
+        margin-top: 4rem;
+    }
+    &__title {
+        font-size: 1.374rem;
+        line-height: 1.9rem;
+        padding: 0 1.5rem 1.15rem 1.5rem;
+        @include iphone {
+            font-size: 1.374rem;
+            line-height: 1.9rem;
+            padding: 0 1.5rem 1.15rem 1.5rem;
+        }
+        @include tablet {
+            font-size: 1.88rem;
+            line-height: 2.48rem;
+            padding: 0 0 1.15rem 0;
+        }
+        text-align: center;
+        text-transform: uppercase;
+    }   
+}

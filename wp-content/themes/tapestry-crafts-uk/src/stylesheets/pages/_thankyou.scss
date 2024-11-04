@@ -1,0 +1,120 @@
+.woocommerce-account, .woocommerce-order-received {
+    & .entry-footer .edit-link {
+        display: none;
+    }
+    & .woocommerce-customer-details {
+        margin-bottom: 2.5rem;
+        @include tablet {
+            margin-bottom: auto;
+        }
+        border-top: 1px solid #ddd;
+        padding-top: 2rem;
+        margin-top: 3.1rem;
+    }
+    & .woocommerce-thankyou-order-received {
+        font-weight: $bold;
+    }
+    & .woocommerce-thankyou-order-details {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 2.3rem;
+    }
+    & .woocommerce .shop_table tfoot td, & .woocommerce .shop_table tfoot th {
+        width: 100%;
+        @include tablet {
+            width: 170px;
+        }
+    }
+    // & .woocommerce .woocommerce-MyAccount-content .woocommerce-orders-table {
+    //     font-size: 0.95rem;
+    // }
+    & .woocommerce .woocommerce-MyAccount-content .woocommerce-orders-table {
+        width: 100%;
+        background: #f9f9f9;
+        // box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, .1);
+    }
+    & .woocommerce .woocommerce-MyAccount-content table.woocommerce-orders-table th {
+        padding: 0.8rem 1.1rem;
+        font-weight: $bold;
+    }
+    & .woocommerce .woocommerce-MyAccount-content table.woocommerce-orders-table td {
+        padding: 0.8rem 1.1rem;
+        font-weight: $normal;
+    }
+    & .woocommerce .col2-set, .woocommerce-page .col2-set {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    & .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+        width: 100%;
+        margin-right: 0;
+        @include desktop-small {
+            width: 48%;
+            margin-right: 4%;
+        }
+        position: relative;
+    }
+    & .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+        width: 100%;
+        @include desktop-small {
+            width: 48%;
+        }
+        position: relative;
+    }
+    & .addresses .title .edit {
+        position: absolute;
+        float: right;
+        background: $secondary-color;
+        color: #fff;
+        border-radius: .2rem;
+        font-weight: 700;
+        padding: 0.5rem .8rem;
+        margin-top: 1.35rem;
+        top: 0;
+        right: 0;
+        font-size: 0.6rem;
+        @include desktop {
+            font-size: 0.8rem;
+        }
+    }
+    & .woocommerce-Address-title h2 {
+        padding: 0;
+    }
+    & .woocommerce .woocommerce-MyAccount-content mark {
+        background: transparent;
+        font-weight: $bold;
+        color: $secondary-color;
+    }
+    & .woocommerce .woocommerce-MyAccount-content .woocommerce-table {
+        width: 100%;
+        background: #f9f9f9;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, .1);
+    }
+    & .woocommerce .woocommerce-MyAccount-content .woocommerce-table tr {
+        border-bottom: 1px solid #eee;
+    }
+    & .woocommerce .woocommerce-MyAccount-content .woocommerce-table th {
+        padding: 0.8rem 1.1rem;
+        font-weight: $bold;
+        text-align: left;
+    }
+    & .woocommerce .woocommerce-MyAccount-content .woocommerce-table td {
+        padding: 0.8rem 1.1rem;
+        font-weight: $normal;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

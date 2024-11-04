@@ -1,0 +1,56 @@
+.two-column-featured {
+    background: $secondary-color;
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+    @include laptop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__col {
+        background: $white;
+        padding: 2.7rem 8vw;
+        @include laptop {
+            padding: 2.7rem 2.2rem;
+        }
+        @include desktop-small {
+            padding: 2.7rem 3rem;
+        }
+        @include desktop {
+            padding: 2.7rem 5rem;
+        }
+    }
+    &__heading {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        @include iphone {
+            font-size: 2.3rem;
+            line-height: 3rem;
+        }
+        @include desktop {
+            font-size: 2.7rem;
+            line-height: 3.4rem;
+        }
+    }
+    & img {
+        display: none;
+        @include laptop {
+            display: block;
+        }
+    }
+    & .column__col {
+        justify-content: center;
+    }
+    & .column__content {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+}
+
+.featured-contact {
+    &__icon {
+        background: $primary-color;
+        color: $white;
+        padding: 0.35rem;
+        border-radius: 50%;
+        font-size: 0.85rem;
+    }
+}

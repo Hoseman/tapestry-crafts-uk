@@ -1,0 +1,58 @@
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__input {
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid $midpalegrey;
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+    &__message {
+        height: 80px;
+    }
+    &__col-6 {
+        width: 100%;
+        @include iphone {
+            width: 48.5%;
+        }
+    }
+    &__col-12 {
+        width: 100%;
+    }
+    &__submit {
+        background: $primary-color;
+        display: block;
+        color: $white;
+        width: 100%;
+        font-weight: $bold;
+        box-shadow: none;
+        padding: 0.8rem;
+        border-radius: 0.3rem;
+    }
+}
+.wpcf7 {
+    width: 100%;
+}
+.wpcf7 form.invalid .wpcf7-response-output {
+    border-color: $primary-color;
+}
+.wpcf7 form .wpcf7-response-output {
+    font-size: 0.88rem;
+    margin: -0.5rem 0 0.5em;
+    padding: 0.5em 1em;
+}
+.wpcf7-not-valid-tip {
+    color: $primary-color;
+    font-size: 0.8em;
+    font-weight: $bold;
+    display: block;
+    font-style: italic;
+    text-align: left;
+}

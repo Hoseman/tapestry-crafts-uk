@@ -1,0 +1,203 @@
+.carousel-small {
+    width: 100%;
+    position: relative;
+    &__img {
+        width: 100%;
+        //height: calc(100vh - 68px);
+        height: 160px;
+        object-fit: cover;
+        @include iphone {
+            height: 200px;
+        }
+        @include tablet {
+            height: 250px;
+        }
+        @include laptop {
+            height: 300px;
+        }
+        @include desktop {
+            height: 300px;
+        }
+    }
+    &__inner {
+        justify-content: center;
+        align-items: center;
+        z-index:99;
+        display:flex;
+        flex-wrap:wrap;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        @include tablet {
+            width: 1400px;
+        }
+    }
+    &__content::before {
+        content:"";
+        background: rgba(68, 99, 131, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+    &__card {
+        width: 100%;
+    }
+    &__hide-nav .owl-nav {
+        display: none !important;
+    }
+    &__content {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        text-align: center;
+        color: white;
+        z-index: 10;
+        padding: 0 10rem;
+        font-size: 2rem;
+        line-height: 2.1rem;
+        text-transform: uppercase;
+        font-weight: $heavy;
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+        width: 100%;
+        background-image: linear-gradient(0deg, $primary-color, $white);
+        background-size: 100%;
+        background-repeat: repeat;
+        margin-top:1.5rem;
+        margin-bottom: 1.5rem;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        padding: 0 1rem;
+        @include iphone {
+            font-size: 2.3rem;
+            line-height: 2.5rem;
+            padding: 0 5rem;
+            width: 100%;
+        }
+        @include tablet {
+            font-size: 3.8rem;
+            line-height: 4.3rem;
+            padding: 0 10rem;
+            width: 90%;
+        }
+        @include laptop {
+            font-size: 5.3rem;
+            line-height: 4.5rem;
+            padding: 0 8rem;
+            width: 90%;
+        }
+        @include desktop {
+            font-size: 5rem;
+            line-height: 4.7rem;
+            padding: 0 3rem;
+            width: 100%;
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        color: white;
+        z-index: 10;
+        padding: 0 4rem;
+        font-size: 0.95rem;
+        line-height: 1.65rem;
+        @include iphone {
+            font-size: 1rem;
+            line-height: 1.9rem;
+        }
+        @include tablet {
+            font-size: 1.05rem;
+            line-height: 2rem;
+        }
+        @include laptop {
+            font-size: 1.2rem;
+            line-height: 2.4rem;
+        }
+        max-width: 900px;
+        font-weight: $light;
+        margin-bottom: 2rem;
+    }
+    &__btn {
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+        color: $black;
+        font-size: 0.9rem;
+        padding: 0rem 2.7rem;
+        text-transform: uppercase;
+        margin-top: 0;
+        @include iphone {
+            font-size: 0.95rem;
+            padding: 0rem 2.7rem;
+        }
+        @include tablet {
+            font-size: 1.05rem;
+            padding: 0rem 2.7rem;
+        }
+        @include laptop {
+            font-size: 1.1rem;
+            padding: 0rem 2.7rem;
+        }
+        font-weight: $medium;
+        background: $white;
+    }
+    &__btn:hover {
+        color: $white;
+    }
+    &__flash {
+        position: absolute;
+        z-index: 9;
+        right: 0;
+        width: 110px;
+        display: none;
+        @include iphone {
+            width: 110px;
+            display: block;
+        }
+        @include tablet {
+            width: 130px;
+        }
+        @include laptop {
+            width: 170px;
+        }
+    }
+    &__white-panel {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        background: $white;
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 100vw;
+        display: none;
+        @include iphone {
+            display: block;
+            width: 66vw;
+            clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+        }
+        @include tablet {
+            width: 48vw;
+            height: 25px;
+        }
+        @include laptop {
+            width: 40vw;
+            height: 31px;
+        }
+        z-index: 5;
+    }
+}

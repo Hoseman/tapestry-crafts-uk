@@ -1,0 +1,83 @@
+.page-id-623 {
+    & .categories {
+        margin-top: 2rem;
+    }
+    & .categories .container .woocommerce .products .product-category a {
+        width: 100%;
+    }
+    & .categories .container .woocommerce .products .product-category img {
+        width: 100%;
+        height: auto;
+    }
+    & .categories .container .woocommerce .products .product-category .woocommerce-loop-category__title {
+        font-size: 1.1rem;
+        font-weight: $bold;
+        text-align: center;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+    }
+    & .categories .container .woocommerce .products .product-category .woocommerce-loop-category__title .count {
+        background: none;
+        color: $black;
+    }
+    & .categories .container .woocommerce .products {
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        @include iphone {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include desktop-small {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    & .categories .container .woocommerce .products li {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.page-id-626 {
+    & .categories {
+        margin-top: 2rem;
+    }
+    & .categories .container .woocommerce .products .product-category a {
+        width: 100%;
+    }
+    & .categories .container .woocommerce .products .product-category img {
+        width: 100%;
+        height: auto;
+    }
+    & .categories .container .woocommerce .products .product-category .woocommerce-loop-category__title {
+        font-size: 1.1rem;
+        font-weight: $bold;
+        text-align: center;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+    }
+    & .categories .container .woocommerce .products .product-category .woocommerce-loop-category__title .count {
+        background: none;
+        color: $black;
+    }
+    & .categories .container .woocommerce .products {
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(1, 1fr);
+        @include iphone {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include desktop-small {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    & .categories .container .woocommerce .products li {
+        width: 100%;
+        margin: 0;
+    }
+}

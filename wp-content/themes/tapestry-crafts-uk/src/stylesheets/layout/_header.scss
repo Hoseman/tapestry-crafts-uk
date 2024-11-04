@@ -1,0 +1,371 @@
+// // Header.
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 0.8rem 0;
+  @include laptop {
+    padding: 0;
+    height: auto;
+  }
+  background: $white;
+  &--toggle-active {
+    position: fixed !important;
+    bottom: 0;
+    top: 93px;
+    z-index:9999 !important;
+    @include laptop {
+      top: 62px;
+    }
+  }
+  &__container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @include tablet {
+      width: 100%;
+    }
+    @include laptop {
+      width: 95%;
+      max-width: auto;
+    }
+    @include desktop {
+      width: 80%;
+      max-width: 1450px;
+    }
+  }
+  &__layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include laptop {
+      flex-wrap: nowrap;
+    }
+  }
+  & .custom-logo-link {
+    margin: 0 0 0 0.7rem;
+    @include iphone {
+      margin: 0 0 0 1.5rem;
+    }
+    @include laptop {
+      margin: 0;
+    }
+  }
+  & .custom-logo {
+    width: 70vw;
+    margin-bottom: 0rem;
+    @include iphone {
+      width: 290px;
+      margin-bottom: -0.5rem;
+    }
+    @include tablet {
+      width: 310px;
+      margin-bottom: -1.5rem;
+    }
+    @include laptop {
+      width: 28vw;
+      margin-bottom: -1.5rem;
+    }
+    @include desktop {
+      width: 380px;
+      margin-bottom: -2.2rem;
+    }
+    height: auto;
+  }
+}
+
+.header-top {
+  background: $palegrey;
+  padding: 0.8rem;
+  & .header__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97.3%;
+    @include tablet {
+      width: 97.3%;
+    }
+    @include laptop {
+      width: 96.1%;
+    }
+    @include desktop {
+      width: 80.8%;
+    }
+  }
+  &__search {
+    font-size: 0.9rem;
+    color: $black;
+    padding: .1rem 0.7rem;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid #eee;
+  }
+  &__menu {
+    margin-left: auto;
+    font-size: 0.79rem;
+    width: auto;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: 1rem;
+    @include tablet {
+      margin-right: 0;
+      font-size: 0.9rem;
+      width: auto;
+      justify-content: space-between;
+      margin-top: 0;
+    }
+    font-weight: 500;
+    display: flex;
+  }
+  &__menu ul {
+    display: flex;
+  }
+  &__menu ul li {
+    padding: 0 0 0 0.7rem;
+  }
+  &__menu ul li::after {
+    content: "";
+    border-right: 1px solid $black;
+    padding: 0 0.5rem;
+  }
+  &__menu ul li:nth-child(3)::after {
+    border-right: none;
+    padding: 0;
+  }
+}
+
+// Navigation.
+.navigation {
+  display: none;
+  flex-basis: 100%;
+  padding-top: 1rem;
+  margin-bottom: -0.75rem;
+  @include laptop {
+    margin-bottom: 0;
+    flex-basis: unset;
+    padding: unset;
+    display: initial;
+  }
+  &--open {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 55vh;
+    @include iphone {
+      height: 55vh;
+    }
+    @include tablet {
+      height: 76vh;
+    }
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    animation-name: menu-animation-2;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+  }
+  .menu-list-standard {
+    position: relative;
+  }
+  .menu-list-mega .menu-list {
+    right: 0;
+    padding: 0.65rem 0.9rem 0.25rem 0.9rem;
+    animation-name: megamenu;
+    animation-duration: 0.7s;
+    @include laptop {
+      padding: 4.3rem 8vw 2.8rem 8vw;
+    }
+    @include desktop-small {
+      padding: 4.3rem 10vw 2.8rem 10vw;
+    }
+    @include desktop {
+      padding: 4.3rem 12vw 2.8rem 12vw;
+    }
+  }
+  .menu-item-has-children {
+    // position: relative;
+    &:hover {
+      .menu-list {
+        display: none;
+        flex-wrap: unset;
+        @include laptop {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  .menu-item-has-children > a {
+    position: relative;
+    padding-right: 1rem !important; 
+    &:after {
+      @extend %pseudo;
+      content: "\f078";
+      font-family: Font Awesome\ 5 Free;
+      font-weight: 900;
+      position: absolute;
+      font-size: 0.65rem;
+      right: -0.2rem;
+      top: 0.35rem;
+      display:none;
+      @include laptop {
+        display:block;
+      }
+    }
+  }
+  .menu {
+    display: block;
+    @include laptop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__description {
+      display: block;
+    }
+    li {
+      padding: 0.5rem 0;
+      margin: 0;
+      border-top: 0px solid $midpalegrey;
+      background: $white;
+      transition: background 0.15s ease-in;
+      @include iphone {
+        padding: 0.5rem 0;
+      }
+      @include tablet {
+        padding: 1rem 0;
+      }
+      @include laptop {
+        border-top: 1px solid $midpalegrey;
+        padding: 2rem 0;
+        margin: 0 0 0 3vw;
+        background: $white;
+        border-top: 1px solid transparent;
+      }
+      @include desktop-small {
+        padding: 2rem 0;
+        margin: 0 0 0 3.3vw;
+      }
+      @include desktop {
+        padding: 2rem 0;
+        margin: 0 0 0 3.3vw;
+      }
+      // &:first-of-type {
+      //   margin-left: unset;
+      // }
+      // &:last-of-type {
+      //   margin-right: unset;
+      // }
+      a {
+        @extend %hover;
+        font-weight: $medium;
+        @include laptop {
+          font-weight: $normal;
+        }
+        color: $black;
+        font-size: 1.5rem;
+        padding: 0 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.02rem;
+        @include laptop {
+          padding: 0;
+          font-size: 0.83rem;
+          font-weight: $bold;
+        }
+        @include desktop {
+          font-size: 0.89rem;
+        }
+        &--active {
+          font-weight: $bold;
+        }
+      }
+      ul {
+        display: none;
+        background: transparent;
+        padding: 0.65rem 10rem 0.25rem 10rem;
+        position: relative;
+        @include laptop {
+          background: $primary-color;
+          // background: rgba(238, 238, 238, 0.93);
+          position: absolute;
+          padding: 0.65rem 10rem 0.25rem 10rem;
+          top: 100%;
+          left: 0;
+        }
+      }
+      ul li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        @include laptop {
+          width: 10rem;
+        }
+      }
+      // ul .menu-list-mega {
+      //   width: 33.333%;
+      // }
+      // ul {
+      //   background: $palegrey;
+      // }
+    }
+    li:hover {
+      background: $white;
+    }
+    li:hover a {
+      color: $primary-color;
+      @include laptop {
+        color: $black;
+      }
+    }
+    li:hover .menu-list li a {
+      color: $black;
+      width: 100%;
+    }
+    li:hover .menu-list li a:hover {
+      color: $primary-color;
+    }
+    li:hover .menu-list li .menu__featured-image {
+      transition: all 0.15s ease-in;
+    }
+    li:hover .menu-list li .menu__featured-image:hover {
+      filter: grayscale(100%);
+    }
+    li .menu-list li {
+      background: transparent;
+      border-top: 1px solid transparent;
+      @include laptop {
+        background: transparent;
+      }
+    }
+    li:hover .menu-list li {
+      background: $white;
+      @include laptop {
+        background: transparent;
+      }
+      border-top: 1px solid transparent;
+    }
+  }
+}
+
+// @keyframes megamenu {
+//   from {opacity: 1; padding-top: 0;}
+//   to {opacity: 1; padding-top: 0;}
+// }
+
+@include laptop { 
+  @keyframes megamenu {
+    from {opacity: 0; padding-top: 3.3rem; background: $primary-color;}
+    to {opacity: 1; padding-top: 4.3rem; background: lighter($primary-color, 20%);}
+  }
+}
+
+.is-form-style {
+  width: 100%;
+  @include tablet {
+    width: auto;
+  }
+}

@@ -1,0 +1,38 @@
+.woocommerce-account {
+    & .woocommerce h2 {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    & .woocommerce .woocommerce-form-login label {
+        width: 100%;
+        display: block;
+    }
+    & .woocommerce .woocommerce-form-login {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    & .woocommerce .woocommerce-form-login p:nth-child(3) {
+        width: 100%;
+        display: block;
+    }
+    & .woocommerce .woocommerce-form-login .woocommerce-Input--text {
+        width: 100%;
+        box-shadow: none;
+        border: 1px solid #ddd;
+        font-size: .9rem;
+        padding: .6rem;
+        border-radius: 0;
+    }
+    & .woocommerce .woocommerce-form-login .woocommerce-form-row {
+        width: 100%;
+        margin-right: 0%;
+        @include tablet {
+            width: 48%;
+            margin-right: 2%;
+        }
+    }
+    & .woocommerce .woocommerce-form-login .woocommerce-form__input-checkbox {
+        padding: 0;
+        margin-bottom: 2.5rem;
+    }
+}

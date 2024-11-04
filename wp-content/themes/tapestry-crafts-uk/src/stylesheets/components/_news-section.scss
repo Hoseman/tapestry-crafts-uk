@@ -1,0 +1,38 @@
+.news-section {
+    text-align: center;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-size: 1.8rem;
+        line-height: 3.3rem;
+        font-weight: 300;
+        color: $black;
+    }
+    &__content {
+        display: grid;
+        grid-gap: 2.8rem;
+        grid-template-columns: repeat(1, 1fr);
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    &__card {
+        text-align: left;
+    }
+    &__card-title {
+        font-size: 1.35rem;
+        color: $black;
+        margin-top: 1rem;
+    }
+    &__card-btn {
+        padding: 0.8rem 1.5rem;
+        margin-top: 1.5rem;
+    }
+    &__featured-image img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,140 @@
+.footer {
+  background: $palegrey;
+  padding: 4rem 0 3rem 0;
+  &__layout {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    @include iphone {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    // a {
+    //   color: $black;
+    // }
+  }
+  &__col:nth-child(1) {
+    width: 100%;
+    margin-bottom: 1.75rem;
+    @include iphone {
+      width: 28%;
+      margin-bottom: 3rem;
+    }
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+  &__col {
+    width: 100%;
+    margin-bottom: 1.75rem;
+    @include iphone {
+      width: 33%;
+      margin-bottom: 0;
+    }
+  }
+  &__col:nth-child(3) {
+    width: 100%;
+    margin-bottom: 1.75rem;
+    @include tablet {
+      width: 33%;
+      margin-bottom: 0;
+    }
+  }
+  &__menu {
+    display: block;
+    margin-top: 0;
+    @include iphone {
+      margin-top: 1.3rem;
+    }
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+  &__menu li a {
+    color: $grey-500;
+    font-weight: $medium;
+    padding: 0;
+    font-size: 0.9rem;
+    @include laptop {
+      padding: 0;
+    }
+  }
+  &__logo {
+    width: 210px;
+    height: auto;
+    margin-bottom: 1.99rem;
+  }
+  &__tel {
+    font-size: 1.05rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    @include iphone {
+      width: auto;
+      margin-bottom: 0;
+    }
+    @include laptop {
+      font-size: 0.9rem;
+      margin-right: 0;
+    }
+    @include desktop {
+      font-size: 1.05rem;
+    }
+  }
+  &__signoff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-top: 2rem;
+    @include iphone {
+      margin-top: 3rem;
+    }
+    padding: 1.5rem 0;
+  }
+  &__signoff-col {
+    width: 100%;
+    @include laptop {
+      width: auto;
+    }
+    color: $palegrey
+  }
+  &__signoff-content {
+    color: #8b8b8b;
+    padding: 0;
+    font-size: .9rem;
+    line-height: 1rem;
+    margin-top: 0.5rem;
+    @include laptop {
+      margin-top: 0;
+    }
+  }
+  &__signoff-icon {
+    color: darken($midpalegrey, 20%);
+    padding: 0.75rem 1rem 0 0;
+    @include laptop {
+      padding: 0.25rem 0 0 1rem;
+    }
+  }
+  &__signoff-icon:nth-child(1) {
+    font-size: 1.3rem;
+  }
+  &__signoff-icon:nth-child(2) {
+    font-size: 1.15rem;
+  }
+  &__signoff-icon:nth-child(3) {
+    font-size: 1.3rem;
+  }
+  &__signoff-icon:nth-child(4) {
+    font-size: 1.35rem;
+  }
+  &__subheading {
+    text-transform: uppercase;
+    font-weight: $bold;
+    font-size: 0.95rem;
+    color: $grey-700;
+  }
+}

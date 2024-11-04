@@ -1,0 +1,140 @@
+.owl-carousel-main .owl-nav button.owl-prev {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    width: 30px;
+    opacity: 0.8;
+    left: 1.5rem;
+    display: none;
+    @include tablet { 
+        left: 1.5rem;
+        display: block;
+    }
+    @include laptop {
+        left: 3.5rem;
+    }
+    @include desktop {
+        left: 5.5rem;
+    }
+}
+.owl-carousel-main .owl-nav button.owl-prev:hover {
+    background: transparent;
+}
+.owl-carousel-main .owl-nav button.owl-next {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    width: 30px;
+    right: 1.5rem;
+    display: none;
+    @include tablet {
+        right: 1.5rem;
+        display: block;
+    }
+    @include laptop {
+        right: 3.5rem;
+    }
+    @include desktop {
+        right: 5.5rem;
+    }
+    opacity: 0.8;
+}
+.owl-carousel-main .owl-nav button.owl-next:hover {
+    background: transparent;
+}
+
+
+
+
+
+.owl-carousel-popular-products .owl-nav button.owl-prev {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    width: 30px;
+    opacity: 0.4;
+    left: -1.5rem;
+    display: none;
+    @include tablet { 
+        left: -2.5rem;
+        display: block;
+    }
+    @include laptop {
+        left: -3.5rem;
+    }
+    @include desktop {
+        left: -3.5rem;
+    }
+}
+.owl-carousel-popular-products .owl-nav button.owl-prev:hover {
+    background: transparent;
+}
+.owl-carousel-popular-products .owl-nav button.owl-next {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    width: 30px;
+    opacity: 0.4;
+    right: -1.5rem;
+    display: none;
+    @include tablet {
+        right: -2.5rem;
+        display: block;
+    }
+    @include laptop {
+        right: -3.5rem;
+    }
+    @include desktop {
+        right: -3.5rem;
+    }
+}
+.owl-carousel-popular-products .owl-nav button.owl-next:hover {
+    background: transparent;
+}
+
+
+
+
+
+
+.owl-carousel-news .owl-nav button.owl-prev {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    width: 27px;
+    opacity: 1;
+    left: -4rem;
+}
+.owl-carousel-news .owl-nav button.owl-prev:hover {
+    background: transparent;
+}
+.owl-carousel-news .owl-nav button.owl-next {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    width: 27px;
+    right: -4rem;
+    opacity: 1;
+}
+.owl-carousel-news .owl-nav button.owl-next:hover {
+    background: transparent;
+}
+.owl-theme .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -25px;
+}
+.owl-carousel .owl-nav.disabled {
+    display: block;
+}
+// .carousel {
+//     & .owl-carousel-main .owl-stage-outer .carousel__content {
+//         object-fit: cover;
+//         height: 500px;
+//     }
+//     & .owl-carousel-main .owl-stage-outer {
+//         object-fit: cover;
+//         height: 500px;
+//     }
+// }

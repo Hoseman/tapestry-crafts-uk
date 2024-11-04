@@ -1,0 +1,10 @@
+.woocommerce-breadcrumb {
+    font-size: 0.88rem;
+    padding: 0 0 1.5rem 0;
+    border-bottom: 1px solid grey;
+    margin-bottom: 2.5rem;
+    font-weight: $medium;
+    & a:nth-child(1) {
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,6 @@
+.carousel {
+    & .owl-carousel-main .owl-stage-outer {
+        object-fit: cover;
+        height: 550px;
+    }
+}

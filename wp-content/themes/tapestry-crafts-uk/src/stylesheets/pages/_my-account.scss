@@ -1,0 +1,129 @@
+.woocommerce-account {
+    & .woocommerce {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1460px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2rem 0rem 10rem 0rem;
+    }
+    & .woocommerce .woocommerce-LostPassword {
+        display: block;
+    }
+    & .woocommerce .woocommerce-edit-account {
+        width: 100%;
+        display: block;
+    }
+    & .woocommerce .woocommerce-MyAccount-navigation {
+        width: 100%;
+        @include iphone {
+            width: 100%;
+        }
+        @include tablet {
+            width: 24%;
+        }
+        @include laptop {
+            width: 18%;
+        }
+        @include desktop {
+            width: 16%;
+        }
+    }
+    & .woocommerce .woocommerce-MyAccount-content {
+        width: 100%;
+        @include iphone {
+            width: 100%;
+        }
+        @include tablet {
+            width: 74%;
+        }
+        @include laptop {
+            width: 80%;
+        }
+        @include desktop {
+            width: 82%;
+        }
+    }
+    & .woocommerce .woocommerce-MyAccount-content h2 {
+        padding-top: 0;
+        line-height: 2.5rem;
+    }
+    & .woocommerce .woocommerce-MyAccount-content .woocommerce-Address h2 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        line-height: 2.5rem;
+    }
+    & .woocommerce-MyAccount-navigation-link.is-active a {
+        border-bottom: 2px solid $primary-color;
+    }
+    & .woocommerce-MyAccount-navigation-link {
+        margin-bottom: 1rem;
+    }
+}
+
+.woocommerce-edit-address {
+    & .woocommerce-address-fields .woocommerce-address-fields__field-wrapper .form-row label {
+        display: block;
+    }
+    & .woocommerce-address-fields .woocommerce-address-fields__field-wrapper .form-row input {
+        width: 100%;
+        padding: .4rem .7rem;
+        box-shadow: none;
+        background: #f3f4f4;
+        border: 1px solid #ddd;
+        border-radius: .3rem;
+    }
+    & .woocommerce-address-fields .woocommerce-address-fields__field-wrapper .form-row {
+        padding: 0.7rem 0;
+    }
+}
+
+.woocommerce-edit-account {
+    & .form-row label {
+        display: block;
+    }
+    & .form-row input {
+        width: 100%;
+        padding: .4rem .7rem;
+        box-shadow: none;
+        background: #f3f4f4;
+        border: 1px solid #ddd;
+        border-radius: .3rem;
+    }
+    & .woocommerce-form__input-checkbox {
+        width: auto !important;
+    }
+    & .form-row {
+        padding: 0.7rem 0;
+    }
+}
+
+.woocommerce-lost-password {
+    & .woocommerce .woocommerce-ResetPassword {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    & .woocommerce .woocommerce-ResetPassword p:nth-child(1) {
+        width: 100%;
+    }
+    & .woocommerce .woocommerce-ResetPassword .form-row {
+        width: 100%;
+        margin-right: 0%;
+        @include tablet {
+            width: 500px;
+            margin-right: 30%;
+        }
+    }
+    & .woocommerce .woocommerce-ResetPassword .form-row label {
+        width: 100%;
+        display: block;
+    }
+    & .woocommerce .woocommerce-ResetPassword input {
+        width: 100%;
+        box-shadow:none;
+        padding: .4rem .7rem;
+        background: #f3f4f4;
+        border: 1px solid #ddd;
+        border-radius: .3rem;
+    }
+}
