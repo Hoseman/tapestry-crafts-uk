@@ -57,7 +57,7 @@
     }
     & .woocommerce-product-gallery .flex-viewport {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-        border: 7px solid $white;
+        border: 0px solid $white;
         // border-bottom-width: 4px;
     }
     & .entry-summary {
@@ -322,9 +322,12 @@
 }
 .woocommerce {
     & div.product .woocommerce-product-gallery__wrapper {
-        border: 7px solid $white;
+        border: 0px solid $white;
         box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
         background: white;
+    }
+    & div.product .woocommerce-product-gallery__wrapper a {
+        border: 7px solid $white;
     }
     & div.product .woocommerce-tabs ul.tabs {
         list-style: none;

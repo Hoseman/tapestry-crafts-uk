@@ -37,7 +37,7 @@
                 <p class="footer__signoff-content">© <?php echo date("Y"); ?> • Tapestry Crafts UK • All Rights Reserved</p>
             </div>
             <div class="footer__signoff-col">
-                <a class="footer__signoff-content" href="Mailto: enquiries@tapestry-crafts-uk.co.uk">Email: enquiries@tapestry-crafts-uk.co.uk</a>
+                <a class="footer__signoff-content" href="Mailto:tapestrycrafts.uk@yahoo.com">Email: tapestrycrafts.uk@yahoo.com</a>
                 <?php //if( get_theme_mod( 'ah_twitter_handle' ) ){ ?>
                             <!-- <a target="_blank" href="<?php //echo get_theme_mod( 'ah_twitter_handle' ) ?>"><i class="footer__signoff-icon fa-brands fa-x-twitter"></i></a> -->
                 <?php //} ?>

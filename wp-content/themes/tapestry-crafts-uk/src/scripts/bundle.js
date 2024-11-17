@@ -19,23 +19,7 @@ jQuery(window).on("resize", function () {
     }
 });
 
-function disableMenuItem() {
-    if (jQuery(window).width() > 1100) {
-        jQuery("#menu-item-610 > a").on("click", function (e) {
-            e.preventDefault(); // Disable the click event
-        });
-    } else {
-        jQuery("#menu-item-610 > a").off("click"); 
-    }
-}
 
-jQuery(document).ready(function () {
-    disableMenuItem();
-});
-
-jQuery(window).on("resize", function () {
-    disableMenuItem();
-});
 
 jQuery(function() {
     var owl = jQuery(".owl-carousel-news");
